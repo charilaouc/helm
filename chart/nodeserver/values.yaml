@@ -10,13 +10,13 @@ image:
     requests:
       cpu: 200m
       memory: 300Mi
- readinessProbe:
+readinessProbe:
    httpGet:
      path: /ready
      port: 3000
    initialDelaySeconds: 3
    periodSeconds: 5
- livenessProbe:
+livenessProbe:
    httpGet:
      path: /live
      port: 3000
